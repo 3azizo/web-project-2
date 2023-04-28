@@ -70,4 +70,29 @@ function slider_m(dir) {
     bul[r - 1].classList.add("active");
   }
 }
+let allSection = document.querySelectorAll(".handelAnimation");
+allSection.forEach((sec) => sec.classList.add("hidden"));
+const handelAnimation = function (entries, observe) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("hidden");
+};
+const observe = new IntersectionObserver(handelAnimation, {
+  root: null,
+  threshold: 0.3,
+});
+allSection.forEach((sec) => observe.observe(sec));
 //home slider
+// const allsections = document.querySelectorAll(".section");
+// const revealSection = function (entries, observe) {
+//   const [entry] = entries;
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section--hidden");
+//   observe.unobserve(entry.target);
+//   // console.log(entry);
+// };
+// const SectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.2,
+//   // rootMargin: '200px',
+// });
