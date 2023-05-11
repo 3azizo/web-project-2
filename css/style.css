@@ -50,7 +50,6 @@ body {
   left: 0;
   position: fixed;
   background-color: var(--sc_color);
-  transition: 0.5s;
 }
 .conta {
   display: flex;
@@ -100,7 +99,6 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.6s;
   z-index: 1000;
 }
 header .menu {
@@ -126,7 +124,6 @@ header ul li a {
   color: var(--textC);
   letter-spacing: 2px;
   font-weight: 500px;
-  transition: 0.6s;
 }
 .bownav .logo {
   color: var(--background);
@@ -349,7 +346,6 @@ header ul li a:hover {
 }
 .design .image {
   text-align: center;
-  transition: 0.6s;
 }
 .design .image:hover {
   transform: rotate(10deg);
@@ -506,7 +502,6 @@ hr {
   overflow: hidden;
   border-radius: 10px;
   margin: 20px;
-  transition: 0.7s ease;
 }
 .project_card:hover {
   transform: scale(1.1);
@@ -533,7 +528,6 @@ hr {
 .more_details {
   text-decoration: none;
   color: var(--main_color);
-  transition: 0.7s ease;
 }
 .more_details:hover {
   color: var(--sc_color);
